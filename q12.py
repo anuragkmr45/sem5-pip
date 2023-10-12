@@ -1,12 +1,21 @@
-def defaultretuen():
-    a = 5
+def checkasc(a, b, c):
+    if(a < b < c):
+        return True
+    return False;
 
-def secfun(a):
-    print(a)
+def checkdesc(a, b, c):
+    if(a > b > c):
+        return True
+    return False
 
-a = defaultretuen()
-print(a)
+def main():
 
-b = secfun(5)
-print(b)
     
+    if(checkasc(1,44,3) == True):
+        return "asc"
+    if(checkdesc(1,44,3) == True):
+        return "desc"
+
+    return "something wrong"
+
+print(main())

@@ -1,11 +1,8 @@
-def collinear(x1, y1, x2, y2, x3, y3):
-	a = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)
+def grossalary(salary):
+    a = salary * (4/10)
+    b = salary * (2/10)
 
-	if (a == 0):
-		print ("collinear")
-	else:
-		print ("Non collinear")
+    return salary - (a + b)
 
-x1, x2, x3, y1, y2, y3 = 1, 1, 1, 1, 4, 5
-collinear(x1, y1, x2, y2, x3, y3)
-
+ans = grossalary(100000)
+print("grocess salary : ",ans)

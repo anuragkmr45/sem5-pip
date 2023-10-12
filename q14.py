@@ -1,15 +1,12 @@
-def UppsrCase(a):
-    return a.upper()
+def daynmonth(day, month):
+    if(day == 20 and month > 3 and month < 6):
+        return True
+    return False
 
-def checkLower(a):
-    return a.islower()
+day = int(input("Enter day : "))
+month = int(input(" Enter month :  "))
 
-def main():
-    a = input("Enter string : ")
-    if(checkLower(a) == True):
-        return a.upper()
+ans = daynmonth(day, month)
 
-    return "in upper case"
-
-print(main())
-    
+print(ans)
+        
